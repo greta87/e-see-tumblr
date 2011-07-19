@@ -14,7 +14,6 @@
   		<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
  		 <meta name="if:Show notes" content="1" />
  <!-- iPhone -->
- <!-- Demonstrating Git-->
   <meta name="viewport" content="width=775,scale=1.0"/>
   <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <!-- DEFAULT COLORS -->
@@ -28,111 +27,107 @@
   <meta name="font:Body" content="Georgia, serif">
   <meta name="image:Background" content="">
   		
-        <style type="text/css">
-  
-  <style type="text/css">
-    body {
-      background: {color:Background} url('{image:Background}') top left fixed;
-      color: {color:Text};
-      font: normal 1em/1.5em {font:Body};
-      margin: 0;
-      padding: 0;
-      text-align: center; /* for ie5.5/win */
-    }
-    
-    a, a:active, a:visited {
-      color: {color:Link};
-      font-weight: normal;
-      text-decoration: none;
-    }
-    
-    a:hover {
-      text-decoration: underline;
-    }
-    
-    a img {
-        border: 0;
-    }
-    
-    blockquote, ol, p, ul {
-      margin: 0 0 1.5em;
-      padding: 0;
-    }
-    
-    ol, ul {
-      margin-left: 2em;
-      margin-right: 2em;
-    }
-    
-    blockquote {
-      border-left: 2px solid {color:Title};
-      font-style: italic;
-      margin-left: 1em;
-      padding: 0 2em 0 1em;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-      color: {color:Title};
-      margin: 0 0 1.5em;
-      padding: 0;
-    }
-    
-    h1 {
-      font-size: 3em;
-      line-height: 1;
-      margin-bottom: .5em;
-    }
-    
-    h1 a, h1 a:visited, h1 a:active {
-      color: {color:Title};
-    }
-    
-    h1 a:hover {
-      color: {color:Link};
-      text-decoration: none;
-    }
-    
-    h2 {
-      color: {color:Description};
-      font-size: 1em;
-      margin-bottom: .5em;
-    }
-    
-    h3 {
-      font-size: 1.4em;
-    }
-    
-    
-    /* Content container */
-    #content {
-      margin: 1.5em auto 0;
-      text-align: left;
-      width: 35em;
-    }
-    
-    
-    /* Metadata */
-    #meta {
-      list-style: none;
-      margin: 0.75em 0 0;
-      padding: 0;
-      text-align: right;
-    }
-    
-    #meta li {
-      display: inline;
-    }
+<style type="text/css">
+
+/* Reset
+--------------------------------*/	
+*								{outline: none; padding: 0; margin: 0; border: 0;}
 
 
-		/* Search */
-		#search { margin: 0 0 0.75em; text-align: right; }
-		
+/* Fundamental styles
+--------------------------------*/	
+body							{font: 95%/1.4em  Georgia, serif; background: #fff; color: #333; text-align:justify; }	
+#intro							{text-align:center; width: 100%; margin: 0px auto; overflow:hidden; margin-bottom: 0px; background-color: #d0df00;}
+div#wrapper						{text-align: left; width: 790px; margin: 20px auto; overflow:hidden; margin-bottom: 0px;}				
+div#page						{width: 790px; margin: 0 auto; background: url(http://www.e-see.com/_images/slicemiddle.jpg) repeat-y;}
+div#pagebottom					{width: 790px; height:71px; margin: 0 auto; background: url(http://www.e-see.com/_images/slicebottom.jpg) center bottom no-repeat; -moz-border-radius-bottomleft: 20px;-moz-border-radius-bottomright: 20px;-webkit-border-bottom-left-radius:20px;-webkit-border-bottom-right-radius:20px;}
 
-		/* Search Result Count */
-		#searchresultcount { margin: 1.5em 0; text-align: center; }
-    
-    
-    /* Individual Posts */
+div.encapsulate					{overflow: hidden; height: 100%;}
+div#iewarning					{display: none;}
+
+/* Header
+--------------------------------*/
+div#header						{width: 790px; margin: 0 auto; overflow: hidden; background:url(http://www.e-see.com/_images/slicetop.jpg) no-repeat;}
+div#header_inner				{width:750px; margin:0 auto; height: 123px; display:block; position:relative; background-color: #d0df00; -moz-border-radius-topleft: 20px;-moz-border-radius-topright: 20px;
+								-webkit-border-top-right-radius:20px;-webkit-border-top-left-radius:20px; margin-top: 20px;}							
+
+div#header div#logo				{display:block; position: absolute; left:20px; top:30px; width: 324px; height: 93px;}
+
+div#search						{position: absolute; bottom:35px; right:0; width: 210px;}
+div#search label				{text-transform: uppercase; color: #999; font-size: 13px;}
+div#search input				{color: #999; font-size: 13px; border: 1px solid #999; position:absolute; right:0; top:0}
+
+div#search						{float: right;	margin: 25px 25px 0 0;	color: #ccc; background: transparent;}
+div#socialbuttons				{float: right; margin-right:20px;}
+
+
+/* Navigation
+--------------------------------*/
+
+
+div#nav							{width:750px; margin:0 auto;}
+div#navmenu 					{}
+div#navmenu	ul					{margin:0px; padding: 0px;}
+div#navmenu	li 					{display:block; float: left; list-style: none; height:120px; line-height: 120px; width:85px; margin: 0 65px 0 0;}
+div#navmenu ul li a 			{display: block;float:left; vertical-align: top; text-decoration: none; color: transparent; font-size: 1em; text-align: center;}
+div#navmenu ul li a:hover  		{background: #fff url(http://www.e-see.com/_images/arrow5.png) center 0px no-repeat; color: black; cursor: pointer; text-align: center;}
+div#navmenu ul li a.active 		{background: #fff url(http://www.e-see.com/_images/arrow5.png) center 0px no-repeat;}
+
+/* Navigation image hover
+--------------------------------*/
+a .nav_everything {background: url(http://www.e-see.com/_images/tumblr-everything.png); display:block; width:121px; height:110px;}
+a:hover .nav_everything {background: url(http://www.e-see.com/_images/tumblr-everything-over.png); display:block;  width:121px; height:110px;}
+a .nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands.png); display:block; width:121px; height:110px;}
+a:hover .nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands-over.png); display:block; width:121px; height:110px;}
+a .nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce.png); display:block; width:121px; height:110px;}
+a:hover .nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce-over.png); display:block; width:121px; height:110px;}
+a .nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm.png); display:block; width:121px; height:110px;}
+a:hover .nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm-over.png); display:block; width:121px; height:110px;}
+a .nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine.png); display:block; width:121px; height:110px;}
+a:hover .nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine-over.png); display:block; width:121px; height:110px;}
+
+/* Content
+--------------------------------*/
+
+div#content						{width:650px; margin:0 auto;}
+
+
+/* Footer
+--------------------------------*/
+div#footer						{width: 750px; margin:0 auto; text-align: center;}
+div#footer > #sitemap 			{text-align:center; font-size: 0.9em;}
+div#footer > #sitemap a 		{height: auto; padding: 5px 5px;margin-left: 0px;margin-right: 5px;bottom: 0px;text-decoration: none; color: #000; font-size: 0.9em;}
+div#footer > #sitemap a:hover 	{color: rgb(95,37,159); text-decoration: underline;}
+div#footer > div#copyright > p	{font-size: 0.8em; color: #999; text-align: center; line-height: 1.2em; margin-top: 10px;}
+	
+/* Typography
+-----------------------------------------------------------------------------*/	
+h1, h2, h3, h4, h5, h6			{font-family: Georgia, serif; color:#333; font-weight: normal}
+h1								{font-size: 2em; line-height: 1.3em; margin: 10px 0 15px 0; color: #000; font-weight: normal;}
+h2								{font-size: 1.3em; line-height: 1.3em; margin: 15px 0 15px 0;}
+h3								{font-size: 1.1em; margin: 20px 0 10px 0; color: #666;}
+h4								{font-size: 1em; margin: 15px 0 10px 0;}	
+h5								{font-size: 1em;}
+p								{margin: 0 0 1em 0;}
+ul,ol							{margin: 0.5em 0 1em 2.5em;}
+a, a:active, a:visited			{color: rgb(130,70,175);}
+a:hover							{color: #000; text-decoration: underline;}
+p.caption						{color: #999; font-size: 0.8em; text-align: right; margin-right: 20px;}
+p.caption a						{color:#999;}
+p.fineprint						{font-size: 0.7em; color: #999;}
+ol.fineprint					{font-size: 0.7em; color: #999;}
+p.small							{font-size: 0.8em;}	
+
+
+
+/* Search
+-----------------------------------------------------------------------------*/
+.search-box input.cat_button        {color: none; opacity: 0!important;}	
+.search-box input.cat_textbox_small {height: 17px; margin: 0 3px 0 0; background: url("http://www.e-see.com/_images/search-icon.gif") no-repeat scroll right center #FFFFFF; padding: 1px; position: absolute; top: 0px; right: 0px;}
+div#search                          {bottom: 50px;}
+
+/* Posts
+-----------------------------------------------------------------------------*/
     .post {
       border-bottom: 1px dotted {color:Description};
       padding: 2em 0 1em;
@@ -231,178 +226,19 @@
     }
 
     .post .quote span.source {font-size:0.7em;}
-
-    /* Previous and Next Links */
-    #prev-next {
-      margin-left: 7em;
-      padding: 1.5em 0 3em;
-    }
-    
-    #prev {
-      margin-right: 1.5em;
-    }
-    
-    #next {
-      margin-left: 1.5em;
-    }
-    
-    #footer {
-      border-top: none {color:Description};
-      font-size: .85em;
-    }
-    
-    #footer a, #footer a:active, #footer a:visited {
-      color: {color:Title};
-    }
-    
-    #footer ul {
-      list-style: none;
-      margin: 1em 0;
-      padding: 0;
-      text-align: center;
-    }
-    
-    #footer ul li {
-      display: inline;
-      margin: 0.5em;
-    }
-
-	.query { font-weight: normal; }
-    
-    .regular img {
-        max-width: 100%;
-    }
-    
-    #disqus_thread, ol.notes {
-        width: 448px;
-        margin: 30px 0 30px 112px;
-    }
-        
-        ol.notes {
-            list-style-type: none;
-        }
-    
-    .search_query { font-weight: bold; }
-    
-    /* Tags */
-    .tags { display: block; text-transform: capitalize; }
-    .tags .tag { margin-right: 0.75em; font-weight: normal; }
-    
-    #tagpageblurb { margin: 1.5em 0; text-align: center; }
-    #tagpageblurb .tag { font-weight: normal; }
-    .caption p {margin-top:10px;}
-        
-        @charset "UTF-8";
-/* Reset
---------------------------------*/	
-*								{outline: none; padding: 0; margin: 0; border: 0;}
-
-
-/* Fundamental styles
---------------------------------*/	
-body							{font: 95%/1.4em  Georgia, serif; background: #fff; color: #333; text-align:justify; }	
-#intro							{text-align:center; width: 100%; margin: 0px auto; overflow:hidden; margin-bottom: 0px; background-color: #d0df00;}
-div#wrapper						{text-align: left; width: 790px; margin: 20px auto; overflow:hidden; margin-bottom: 0px;}				
-div#page						{width: 790px; margin: 0 auto; background: url(http://www.e-see.com/_images/slicemiddle.jpg) repeat-y;}
-div#pagebottom					{width: 790px; height:71px; margin: 0 auto; background: url(http://www.e-see.com/_images/slicebottom.jpg) center bottom no-repeat; -moz-border-radius-bottomleft: 20px;-moz-border-radius-bottomright: 20px;-webkit-border-bottom-left-radius:20px;-webkit-border-bottom-right-radius:20px;}
-
-div.encapsulate					{overflow: hidden; height: 100%;}
-div#iewarning					{display: none;}
-
-/* Header
---------------------------------*/
-div#header						{width: 790px; margin: 0 auto; overflow: hidden; background:url(http://www.e-see.com/_images/slicetop.jpg) no-repeat;}
-div#header_inner				{width:750px; margin:0 auto; height: 123px; display:block; position:relative; background-color: #d0df00; -moz-border-radius-topleft: 20px;-moz-border-radius-topright: 20px;
-								-webkit-border-top-right-radius:20px;-webkit-border-top-left-radius:20px; margin-top: 20px;}							
-
-div#header div#logo				{display:block; position: absolute; left:20px; top:30px; width: 324px; height: 93px;}
-
-div#search						{position: absolute; bottom:35px; right:0; width: 210px;}
-div#search label				{text-transform: uppercase; color: #999; font-size: 13px;}
-div#search input				{color: #999; font-size: 13px; border: 1px solid #999; position:absolute; right:0; top:0}
-
-div#search						{float: right;	margin: 25px 25px 0 0;	color: #ccc; background: transparent;}
-div#socialbuttons				{float: right; margin-right:20px;}
-
-
-/* Navigation
---------------------------------*/
-
-
-div#nav							{width:750px; margin:0 auto;}
-div#navmenu 					{}
-div#navmenu	ul					{margin:0px; padding: 0px;}
-div#navmenu	li 					{display:block; float: left; list-style: none; height:120px; line-height: 120px; width:85px; margin: 0 65px 0 0;}
-div#navmenu ul li a 			{display: block;float:left; vertical-align: top; text-decoration: none; color: transparent; font-size: 1em; text-align: center;}
-div#navmenu ul li a:hover  		{background: #fff url(http://www.e-see.com/_images/arrow5.png) center 0px no-repeat; color: black; cursor: pointer; text-align: center;}
-div#navmenu ul li a.active 		{background: #fff url(http://www.e-see.com/_images/arrow5.png) center 0px no-repeat;}
-
-/* Navigation image hover
---------------------------------*/
-a .nav_everything {background: url(http://www.e-see.com/_images/tumblr-everything.png); display:block; width:121px; height:110px;}
-a:hover .nav_everything {background: url(http://www.e-see.com/_images/tumblr-everything-over.png); display:block;  width:121px; height:110px;}
-a .nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands.png); display:block; width:121px; height:110px;}
-a:hover .nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands-over.png); display:block; width:121px; height:110px;}
-a .nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce.png); display:block; width:121px; height:110px;}
-a:hover .nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce-over.png); display:block; width:121px; height:110px;}
-a .nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm.png); display:block; width:121px; height:110px;}
-a:hover .nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm-over.png); display:block; width:121px; height:110px;}
-a .nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine.png); display:block; width:121px; height:110px;}
-a:hover .nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine-over.png); display:block; width:121px; height:110px;}
-
-/* Content
---------------------------------*/
-
-div#content						{width:650px; margin:0 auto;}
-
-
-/* Footer
---------------------------------*/
-div#footer						{width: 750px; margin:0 auto; text-align: center;}
-div#footer > #sitemap 			{text-align:center; font-size: 0.9em;}
-div#footer > #sitemap a 		{height: auto; padding: 5px 5px;margin-left: 0px;margin-right: 5px;bottom: 0px;text-decoration: none; color: #000; font-size: 0.9em;}
-div#footer > #sitemap a:hover 	{color: rgb(95,37,159); text-decoration: underline;}
-div#footer > div#copyright > p	{font-size: 0.8em; color: #999; text-align: center; line-height: 1.2em; margin-top: 10px;}
-	
-/* Typography
------------------------------------------------------------------------------*/	
-h1, h2, h3, h4, h5, h6			{font-family: Georgia, serif; color:#333; font-weight: normal}
-h1								{font-size: 2em; line-height: 1.3em; margin: 10px 0 15px 0; color: #000; font-weight: normal;}
-h2								{font-size: 1.3em; line-height: 1.3em; margin: 15px 0 15px 0;}
-h3								{font-size: 1.1em; margin: 20px 0 10px 0; color: #666;}
-h4								{font-size: 1em; margin: 15px 0 10px 0;}	
-h5								{font-size: 1em;}
-p								{margin: 0 0 1em 0;}
-ul,ol							{margin: 0.5em 0 1em 2.5em;}
-a, a:active, a:visited			{color: rgb(130,70,175);}
-a:hover							{color: #000; text-decoration: underline;}
-p.caption						{color: #999; font-size: 0.8em; text-align: right; margin-right: 20px;}
-p.caption a						{color:#999;}
-p.fineprint						{font-size: 0.7em; color: #999;}
-ol.fineprint					{font-size: 0.7em; color: #999;}
-p.small							{font-size: 0.8em;}	
-
-
-
-/* Search
------------------------------------------------------------------------------*/
-.search-box input.cat_button        {color: none; opacity: 0!important;}	
-.search-box input.cat_textbox_small {height: 17px; margin: 0 3px 0 0; background: url("http://www.e-see.com/_images/search-icon.gif") no-repeat scroll right center #FFFFFF; padding: 1px; position: absolute; top: 0px; right: 0px;}
-div#search                          {bottom: 50px;}
-
-
-
-      
+  
 </style>
         
-    </head>
-    <body>
-            <div id="intro">
-		<h2>This is the official blog of <a href="http://www.e-see.com/">e-see&reg;</a> and it's products<a href="{RSS}"><img src="http://www.e-see.com/Images/rss.png" alt="rss" width="16" height="15" style="margin-left:5px;" /></a></h2>
-		</div>
-        <div id="wrapper">
-        <div id="nav">
-        <div id="navmenu">
+</head>
+<body>
+  <div id="intro">
+    <h2>This is the official blog of <a href="http://www.e-see.com/">e-see&reg;</a> and it's products<a href="{RSS}"><img src="http://www.e-see.com/Images/rss.png" alt="rss" width="16" height="15" style="margin-left:5px;" /></a></h2>
+  </div>
+  
+  <div id="wrapper">
+    
+    <div id="nav">
+      <div id="navmenu">
         <ul>
         	<li><a href="http://e-see.tumblr.com/"><div class="nav_everything" title="All Posts"></div></a></li>
         	<li><a href="http://e-see.tumblr.com/tagged/TalkBrands"><div class="nav_talkbrands" title="Posts about brands, branding and design tagged TalkBrands"></div></a></li>
@@ -410,46 +246,48 @@ div#search                          {bottom: 50px;}
         	<li><a href="http://e-see.tumblr.com/tagged/BrandFM"><div class="nav_brandfm" title="Posts about BrandFM"></div></a></li>
         	<li><a href="http://e-see.tumblr.com/tagged/MailMachine"><div class="nav_mailmachine" title="Posts about MailMachine"></div></a></li>
         </ul>
-        </div>
-        </div>
-        <div id="header">
-        <div id="header_inner">
+      </div>
+    </div>
+    
+    <div id="header">
+      <div id="header_inner">
         <div id="logo">
-        <a href="http://e-see.tumblr.com/"><img src="http://www.e-see.com/_images/webheader-4.gif" alt="webheader" width="324" height="93" /></a>
+          <a href="http://e-see.tumblr.com/"><img src="http://www.e-see.com/_images/webheader-4.gif" alt="webheader" width="324" height="93" /></a>
         </div>
         <div id="search">
-	  <form action="/search" method="get">
-	   <input type="text" name="q" value="{SearchQuery}" placeholder="Search blog"/>
-	   <!--<input type="submit" value="{lang:Search}"/>-->
-	  </form>
-	</div>
+          <form action="/search" method="get">
+            <input type="text" name="q" value="{SearchQuery}" placeholder="Search blog"/>
+            <!--<input type="submit" value="{lang:Search}"/>-->
+          </form>
         </div>
-        </div>
-        <div id="page">
-
-        <div id="content">
-				
-        
+      </div>
+    </div>
+      
+    <div id="page">
+      <div id="content">
         <div id="posts" class="autopagerize_page_element">
-				
-				{block:SearchPage}
-				<div id="searchresultcount">
-				    {block:SearchResults}
-				        <p>{lang:Your search for SearchQuery returned SearchResultCount results 2}.</p>
-				    {/block:SearchResults}
-				    
-				    {block:NoSearchResults}
-				        <p>{lang:No search results for SearchQuery 2}.</p>
-				    {/block:NoSearchResults}
-				</div>
-				{/block:SearchPage}
-				
-				{block:TagPage}
-				<div id="tagpageblurb">
-				    <h2>{lang:Posts tagged Tag 2}</h2>
-				</div>
-				{/block:TagPage}
-				
+		    
+		    <!-- Search Page Content -->
+		    {block:SearchPage}
+		      <div id="searchresultcount">
+		        {block:SearchResults}
+		        <p>{lang:Your search for SearchQuery returned SearchResultCount results 2}.</p>
+		        {/block:SearchResults}
+		    
+		        {block:NoSearchResults}
+		        <p>{lang:No search results for SearchQuery 2}.</p>
+		        {/block:NoSearchResults}
+		      </div>
+		    {/block:SearchPage}
+		    
+		    <!-- Tag Page Content -->
+		    {block:TagPage}
+		    <div id="tagpageblurb">
+		        <h2>{lang:Posts tagged Tag 2}</h2>
+		    </div>
+		    {/block:TagPage}
+		    
+		    <!-- Begin All Posts -->
         {block:Posts}
         <div class="post">
           {block:NewDayDate}
@@ -459,7 +297,8 @@ div#search                          {bottom: 50px;}
           </div>
           {/block:NewDayDate}
           
-          {block:Text}
+          <!-- Text Posts -->
+          {block:Text} 
           <div class="regular">
             {block:Title}<h1>{Title}</h1>{/block:Title}
             {Body}
@@ -467,7 +306,8 @@ div#search                          {bottom: 50px;}
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
           {/block:Text}
-
+          
+          <!-- Quote Posts -->
           {block:Quote}
           <div class="quote">
             <span class="words">&#0147;{Quote}&#0148;</span>
@@ -476,7 +316,8 @@ div#search                          {bottom: 50px;}
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
           {/block:Quote}
-
+          
+          <!-- Link Posts -->
           {block:Link}
           <div class="link">
             <h3><a href="{URL}" {Target}>{Name}</a></h3>
@@ -487,7 +328,8 @@ div#search                          {bottom: 50px;}
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
           {/block:Link}
-        
+          
+          <!-- Chat Posts -->
           {block:Chat}
           <div class="conversation">
             {block:Title}<h3>{Title}</h3>{/block:Title}
@@ -502,7 +344,8 @@ div#search                          {bottom: 50px;}
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
           {/block:Chat}
-
+        
+          <!-- Photo Posts -->
           {block:Photo}
           <div class="photo">
             {LinkOpenTag}<img src="{PhotoURL-400}" alt="{PhotoAlt}"/>{LinkCloseTag}
@@ -511,7 +354,8 @@ div#search                          {bottom: 50px;}
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
           {/block:Photo}
-
+          
+          <!-- Video Posts -->
           {block:Video}
           <div class="video">
             {Video-400}
@@ -521,6 +365,7 @@ div#search                          {bottom: 50px;}
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
           {/block:Video}
           
+          <!-- Audio Posts -->
           {block:Audio}
           <div class="audio">
             {AudioPlayerGrey}
@@ -529,97 +374,74 @@ div#search                          {bottom: 50px;}
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
           {/block:Audio}
-          
-            {block:NoteCount}{block:IfShowNotes}<span class="when">{NoteCountWithLabel}</span>{/block:IfShowNotes}{/block:NoteCount}
-          
-            {block:IfDisqusShortname}
-            <a href="{Permalink}#disqus_thread" class="permalink">{lang:Comments}</a>
-            {block:IfDisqusShortname}
-
+  
+          {block:Permalink}
+            <div id="disqus_thread"></div>
+              {block:IfDisqusShortname}
+                <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+                <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+              {/block:IfDisqusShortname}
+            </div>
             <a href="{Permalink}" class="permalink">{lang:Permalink} &#8734;</a>
-            
-            {block:HasTags}
-            <span class="tags">
-                Tagged: {block:Tags}<a href="{TagURL}" class="tag">{Tag}</a>{/block:Tags}
-            </span>
-            {/block:HasTags}
-            
-            {block:ContentSource}
-                <div class="source-url">
-                    {lang:Source}: <a href="{SourceURL}">{block:SourceLogo}<img src="{BlackLogoURL}" width="{LogoWidth}" height="{LogoHeight}" alt="{SourceTitle}" />{/block:SourceLogo}{block:NoSourceLogo}{SourceTitle}{/block:NoSourceLogo}</a>
-                </div>
-		    {/block:ContentSource}
-          </div>
-          <br clear="all"/>
-        </div> <!-- end single post -->
+          {/block:Permalink}
+          
+          <!-- Show Tags for each Post -->
+          {block:HasTags}
+          <span class="tags">
+            Tagged: {block:Tags}<a href="{TagURL}" class="tag">{Tag}</a>{/block:Tags}
+          </span>
+          {/block:HasTags}
+          
+        </div><!-- end div.post -->
         {/block:Posts}
         
-        {block:Permalink}
-        {block:IfDisqusShortname}
-        <div id="disqus_thread"></div>
-        <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
-        <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
-        {/block:IfDisqusShortname}
-
-        {block:IfShowNotes}{PostNotes}{/block:IfShowNotes}
-        {/block:Permalink}
-        </div>
-        
         {block:Pagination}
-        <div id="prev-next" class="autopagerize_insert_before">
-          {block:NextPage}<a href="{NextPage}" id="prev" rel="next">&#8592; {lang:Older posts}</a>{/block:NextPage}
-          {lang:Page CurrentPage of TotalPages}
-          {block:PreviousPage}<a href="{PreviousPage}" id="next">{lang:Newer posts} &#8594;</a>{/block:PreviousPage}
-        </div>
+          <div id="prev-next" class="autopagerize_insert_before">
+            {block:NextPage}<a href="{NextPage}" id="prev" rel="next">&#8592; {lang:Older posts}</a>{/block:NextPage}
+            {lang:Page CurrentPage of TotalPages}
+            {block:PreviousPage}<a href="{PreviousPage}" id="next">{lang:Newer posts} &#8594;</a>{/block:PreviousPage}
+          </div>
         {/block:Pagination}
- 
-       
-      </div> <!-- end content div -->
-    </div>
-         
-    {block:IfDisqusShortname}
-    <script type="text/javascript">
-    //<![CDATA[
-    (function() {
-        var links = document.getElementsByTagName('a');
-        var query = '?';
-        for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-        }
-        }
-        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
-    })();
-    //]]>
-    </script>
-    {/block:IfDisqusShortname}
-        </div>
-        </form>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div id="pagebottom">
-        </div>
-        <div id="footer">
-        <div id="sitemap" class="encapsulate">
-        <a href="index.html" title="About e-see&reg;	">About</a>
-        <a href="index.html" title="Brands List">Brands</a>
-        <a href="standards.html" title="Brand Standards and Brand Guidelines">Standards</a>
-        <a href="identity.html" title="Brand Identity">ID</a>
-        <a href="products.html" title="Producet Images = Brand Images">Product</a>
-        <a href="digital.html" title="Other things we do - websites, email, domains, etc">Digital</a>
-        <a href="brandfm.html" title="BrandFM - brand asset management system - Your place for brand files and media">BrandFM</a>
-        <a href="talkbrands_twitter.html" title="Talk about brands">TalkBrands</a>
-        <a href="contact.html" title="e-see contact details">Contact Us</a>
-        </div>
-        <div id="copyright" class="encapsulate">
-        <p>Our brands include e-see&reg;, BrandFM&trade; &amp; MailMachine&trade;<br />
-        &copy; 1997-2011 E-see International Ltd. All rights reserved.</p>
-        <p><strong>Tel: +64 9 631 5130<br />
-        Or 0800 300 373</strong> (NZ only)</p>
-        </div>
-        </div>
-        </div>
-    </body>
+
+   </div> <!-- end div#posts -->
+  </div><!-- end div#content -->
+</div><!-- end div#page -->
+</div><!-- end div#wrapper-->
+
+{block:IfDisqusShortname}
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+    var links = document.getElementsByTagName('a');
+    var query = '?';
+    for(var i = 0; i < links.length; i++) {
+    if(links[i].href.indexOf('#disqus_thread') >= 0) {
+        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    }
+    }
+    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
+{/block:IfDisqusShortname}
+
+<div id="footer">
+    <div id="sitemap" class="encapsulate">
+    <a href="index.html" title="About e-see&reg;	">About</a>
+    <a href="index.html" title="Brands List">Brands</a>
+    <a href="standards.html" title="Brand Standards and Brand Guidelines">Standards</a>
+    <a href="identity.html" title="Brand Identity">ID</a>
+    <a href="products.html" title="Producet Images = Brand Images">Product</a>
+    <a href="digital.html" title="Other things we do - websites, email, domains, etc">Digital</a>
+    <a href="brandfm.html" title="BrandFM - brand asset management system - Your place for brand files and media">BrandFM</a>
+    <a href="talkbrands_twitter.html" title="Talk about brands">TalkBrands</a>
+    <a href="contact.html" title="e-see contact details">Contact Us</a>
+</div>
+<div id="copyright" class="encapsulate">
+    <p>Our brands include e-see&reg;, BrandFM&trade; &amp; MailMachine&trade;<br />
+    &copy; 1997-2011 E-see International Ltd. All rights reserved.</p>
+    <p><strong>Tel: +64 9 631 5130<br />
+    Or 0800 300 373</strong> (NZ only)</p>
+</div>
+</body>
 </html>
