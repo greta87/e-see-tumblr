@@ -47,18 +47,24 @@ div#iewarning					{display: none;}
 
 /* Header
 --------------------------------*/
-div#header						{width: 790px; margin: 0 auto; overflow: hidden; background:url(http://www.e-see.com/_images/slicetop.jpg) no-repeat;}
-div#header_inner				{width:750px; margin:0 auto; height: 123px; display:block; position:relative; background-color: #d0df00; -moz-border-radius-topleft: 20px;-moz-border-radius-topright: 20px;
-								-webkit-border-top-right-radius:20px;-webkit-border-top-left-radius:20px; margin-top: 20px;}							
+div#header						{width: 790px; margin: 0 auto; overflow: hidden; }
+div#header_inner				{display:block; width:750px; margin:0 auto; height: 157px; }
+					
+div#header.All #logo	{display:block; background: url(banner-all.png) no-repeat; width: 750px; height:157px;color: transparent;}
+div#header.TalkBrands #logo	{display:block; background: url(banner-talkbrands.png) no-repeat; width: 750px; height:157px;color: transparent;}
+div#header.Logosauce #logo	{display:block; background: url(banner-logosauce.png) no-repeat; width: 750px; height:157px;color: transparent;}
+div#header.BrandFM #logo	{display:block; background: url(banner-brandfm.png) no-repeat; width: 750px; height:157px;color: transparent;}
+div#header.MailMachine #logo	{display:block; background: url(banner-mailmachine.png) no-repeat; width: 750px; height:157px;color: transparent;}
 
-div#header div#logo				{display:block; position: absolute; left:20px; top:30px; width: 324px; height: 93px;}
-
-div#search						{position: absolute; bottom:35px; right:0; width: 210px;}
-div#search label				{text-transform: uppercase; color: #999; font-size: 13px;}
-div#search input				{color: #999; font-size: 13px; border: 1px solid #999; position:absolute; right:0; top:0}
-
-div#search						{float: right;	margin: 25px 25px 0 0;	color: #ccc; background: transparent;}
-div#socialbuttons				{float: right; margin-right:20px;}
+.shadow		{
+				-moz-box-shadow: 3px 3px 4px #ccc;
+				-webkit-box-shadow: 3px 3px 4px #ccc;
+				box-shadow: 3px 3px 4px #ccc;
+				/* For IE 8 */
+				-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+				/* For IE 5.5 - 7 */
+				filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+			}
 
 
 /* Navigation
@@ -78,16 +84,16 @@ div#navmenu ul li a.nav_everything:hover {/*background: url(http://www.e-see.com
 div#navmenu ul li a.nav_everything.active {/*background: url(http://www.e-see.com/_images/tumblr-everything-over.png);*/ opacity: 1;}
 div#navmenu ul li a.nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands.png); display:block; width:121px; height:110px;}
 div#navmenu ul li a.nav_talkbrands:hover {/*background: url(http://www.e-see.com/_images/tumblr-talkbrands.png);*/ opacity: 1;}
-div#navmenu ul li a.nav_talkbrands.active {/*background: url(http://www.e-see.com/_images/tumblr-talkbrands.png);*/ opacity: 1;}
+div#navmenu.TalkBrands ul li a.nav_talkbrands {opacity: 1;}
 div#navmenu ul li a.nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce.png); display:block; width:121px; height:110px;}
 div#navmenu ul li a.nav_logosauce:hover  {/*background: url(http://www.e-see.com/_images/tumblr-logosauce.png);*/opacity: 1;}
-div#navmenu ul li a.nav_logosauce.active {/*background: url(http://www.e-see.com/_images/tumblr-logosauce.png);*/ opacity: 1;}
+div#navmenu.Logosauce ul li a.nav_logosauce {/*background: url(http://www.e-see.com/_images/tumblr-logosauce.png);*/ opacity: 1;}
 div#navmenu ul li a.nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm.png); display:block; width:121px; height:110px;}
 div#navmenu ul li a.nav_brandfm:hover {/*background: url(http://www.e-see.com/_images/tumblr-brandfm.png);*/ opacity: 1;}
-div#navmenu ul li a.nav_brandfm.active  {/*background: url(http://www.e-see.com/_images/tumblr-brandfm.png);*/ opacity: 1;}
+div#navmenu.BrandFM ul li a.nav_brandfm  {/*background: url(http://www.e-see.com/_images/tumblr-brandfm.png);*/ opacity: 1;}
 div#navmenu ul li a.nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine.png); display:block; width:121px; height:110px;}
 div#navmenu ul li a.nav_mailmachine:hover {/*background: url(http://www.e-see.com/_images/tumblr-mailmachine.png);*/ opacity: 1;}
-div#navmenu ul li a.nav_mailmachine.active {/*background: url(http://www.e-see.com/_images/tumblr-mailmachine.png);*/ opacity: 1;}
+div#navmenu.MailMachine ul li a.nav_mailmachine {/*background: url(http://www.e-see.com/_images/tumblr-mailmachine.png);*/ opacity: 1;}
 
 /* Content
 --------------------------------*/
@@ -126,8 +132,14 @@ p.small							{font-size: 0.8em;}
 /* Search
 -----------------------------------------------------------------------------*/
 .search-box input.cat_button        {color: none; opacity: 0!important;}	
-.search-box input.cat_textbox_small {height: 17px; margin: 0 3px 0 0; background: url("http://www.e-see.com/_images/search-icon.gif") no-repeat scroll right center #FFFFFF; padding: 1px; position: absolute; top: 0px; right: 0px;}
-div#search                          {bottom: 50px;}
+.search-box input.cat_textbox_small {height: 17px; margin: 0 3px 0 0; background: url("http://www.e-see.com/_images/search-icon.gif") no-repeat scroll right center #FFFFFF; padding: 1px;}
+
+div#search						{display:block; width: 250px; height:50px; margin: 20px auto;}
+div#search label				{text-transform: uppercase; color: #999; font-size: 13px;}
+div#search input				{color: #999; font-size: 13px; border: 1px solid #999; height:2em; width: 200px; padding: 3px;}
+div#socialbuttons				{float: right; margin-right:20px;}
+
+
 
 /* Posts
 -----------------------------------------------------------------------------*/
@@ -238,10 +250,20 @@ div#search                          {bottom: 50px;}
     <h2>This is the official blog of <a href="http://www.e-see.com/">e-see&reg;</a> and it's products<a href="{RSS}"><img src="http://www.e-see.com/Images/rss.png" alt="rss" width="16" height="15" style="margin-left:5px;" /></a></h2>
   </div>
   
+  
   <div id="wrapper">
+  
+  	<div id="search">
+      <form action="/search" method="get">
+        <input type="text" name="q" value="{SearchQuery}" placeholder="Search the whole blog"/>
+        <!--<input type="submit" value="{lang:Search}"/>-->
+      </form>
+    </div>
+  
     
     <div id="nav">
-      <div id="navmenu" class="{block:TagPage}{Tag}{/block:TagPage}">
+      <!--<div id="navmenu" class="{block:TagPage}{Tag}{/block:TagPage}">-->
+      <div id="navmenu" class="TalkBrands">
         <ul>
         	<li><a href="http://e-see.tumblr.com/" class="nav_everything" title="All Posts"></a></li>
         	<li><a href="http://e-see.tumblr.com/tagged/TalkBrands" class="nav_talkbrands" title="Posts about brands, branding and design tagged TalkBrands"></a></li>
@@ -253,17 +275,11 @@ div#search                          {bottom: 50px;}
     </div>
     
     
-    <div id="header" class="{block:TagPage}{Tag}{/block:TagPage}">
+    <!--<div id="header" class="{block:TagPage}{Tag}{/block:TagPage}">-->
+    <div id="header" class="TalkBrands">
       <div id="header_inner">
-        <div id="logo">
-          <a href="http://e-see.tumblr.com/"><img src="http://www.e-see.com/_images/webheader-4.gif" alt="webheader" width="324" height="93" /></a>
-        </div>
-        <div id="search">
-          <form action="/search" method="get">
-            <input type="text" name="q" value="{SearchQuery}" placeholder="Search blog"/>
-            <!--<input type="submit" value="{lang:Search}"/>-->
-          </form>
-        </div>
+        <div id="logo"></div>
+         
       </div>
     </div>
       
@@ -412,7 +428,7 @@ div#search                          {bottom: 50px;}
 
 <div id="footer">
     <div id="sitemap" class="encapsulate">
-    <a href="index.html" title="About e-see&reg;	">About</a>
+    <a href="index.html" title="About e-see&reg;">About</a>
     <a href="index.html" title="Brands List">Brands</a>
     <a href="standards.html" title="Brand Standards and Brand Guidelines">Standards</a>
     <a href="identity.html" title="Brand Identity">ID</a>
