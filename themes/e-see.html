@@ -241,7 +241,7 @@ div#search                          {bottom: 50px;}
   <div id="wrapper">
     
     <div id="nav">
-      <div id="navmenu">
+      <div id="navmenu" class="{block:TagPage}{Tag}{/block:TagPage}">
         <ul>
         	<li><a href="http://e-see.tumblr.com/" class="nav_everything" title="All Posts"></a></li>
         	<li><a href="http://e-see.tumblr.com/tagged/TalkBrands" class="nav_talkbrands" title="Posts about brands, branding and design tagged TalkBrands"></a></li>
@@ -252,7 +252,8 @@ div#search                          {bottom: 50px;}
       </div>
     </div>
     
-    <div id="header">
+    
+    <div id="header" class="{block:TagPage}{Tag}{/block:TagPage}">
       <div id="header_inner">
         <div id="logo">
           <a href="http://e-see.tumblr.com/"><img src="http://www.e-see.com/_images/webheader-4.gif" alt="webheader" width="324" height="93" /></a>
@@ -283,14 +284,7 @@ div#search                          {bottom: 50px;}
 		      </div>
 		    {/block:SearchPage}
 		    
-		    <!-- Tag Page Content -->
-		    {block:TagPage}
-		    <div id="tagpageblurb">
-		        <h2>{lang:Posts tagged Tag 2}</h2>
-		    </div>
-		    {/block:TagPage}
-		    
-		<!-- Begin All Posts -->
+		    <!-- Begin All Posts -->
         {block:Posts}
         <div class="post">
         
