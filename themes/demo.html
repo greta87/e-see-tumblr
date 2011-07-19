@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="{Favicon}" />
+	<title>{block:SearchPage}Search results for "{SearchQuery}" - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}Mobile Device Radar</title>
+	{block:Description}
+	  <meta name="description" content="{MetaDescription}" />
+	{/block:Description}
+	<link rel="alternate" title="RSS - All Mobile Device News" type="application/rss+xml" href="http://feeds.feedburner.com/WhyTheLuckyMobile" />		
+	<link rel="alternate" title="RSS - Device Radar" type="application/rss+xml" href="http://feeds.feedburner.com/whytheluckymobile/MobileDeviceRadar" />
+  <link rel="image_src" href="http://10.media.tumblr.com/avatar_eb15b24f5996_128.png" />
+  <link rel="stylesheet" href="http://www.nexus-one.co.uk/stylesheets/reset.css" type="text/css" media="all" charset="utf-8" />
+  <link rel="stylesheet" href="http://www.nexus-one.co.uk/stylesheets/960.css" type="text/css" media="all" charset="utf-8" />
+	<link rel="stylesheet" href="http://www.whytheluckymobile.com/stylesheets/global2.css" type="text/css" media="all" charset="utf-8" />
+  <link rel="stylesheet" href="http://www.nexus-one.co.uk/stylesheets/nexusnewstheme.css" type="text/css" media="all" charset="utf-8" />
+	<style type="text/css">
+  h1 {
+  	height: 40px;
+  	width: 220px;
+  	margin-top:34px;
+  	margin-bottom: 39px;
+  	background-image: url('http://www.whytheluckymobile.com/images/radarlogo.jpg');
+  	background-repeat: no-repeat;
+  	background-position: 5px 0;
+  }
+  #separator {
+  	border-top: solid 1px #ccc;
+  	border-bottom: 0px solid #999;
+  	height: 0px;
+    margin-bottom: 0px;
+  }
+  #promo a {
+  	background-image: url('http://www.whytheluckymobile.com/images/tabletcomp.jpg');
+  }
+  #navigation {
+    margin-bottom: 0;
+    margin-top: 0px;
+    background-image: none;
+  }
+  #menu {
+    margin-top: 47px !important;
+  }
+  #navigation #menu ol li {
+  	font-size: 18px;
+  }
+  #searchform {
+    margin-bottom: 24px;
+  }
+  #recentcomments h2 {
+    margin-top: 24px;
+  }
+  </style>		
+	</head>
+<body>
+<div id="supermenu">
+  <ol>
+    <li class="nolink">CHANNELS: </li>
+  	<li class="off nexus"><a href="http://news.nexus-one.co.uk">NEXUS ONE</a></li>
+  	<li class="off apple"><a href="http://apple.whytheluckymobile.com">APPLE TABLET</a></li>
+  	<li class="selected radar"><a href="http://radar.whytheluckymobile.com">RADAR</a></li>
+  	<li class="home"><a href="http://www.whytheluckymobile.com">whytheluckymobile</a></li>
+  </ol>
+</div>
+<div id="site" class="container_12">
+   
+  <!--Main Nav-->
+  <div class="grid_3">
+    <h1><a href="http://radar.whytheluckymobile.com"><span>Mobile Device Radar</span></a></h1>
+  </div>
+  <div id="navigation" class="grid_5">
+    <div id="menu">
+			<ol>
+				<li>new mobile devices</li>
+			</ol>
+		</div>
+  </div>
+  <div class="grid_4">
+      <div class="ad234">
+      <script type="text/javascript"><!--
+      google_ad_client = "pub-5908456869441900";
+      google_ad_slot = "5906396850";
+      google_ad_width = 234;
+      google_ad_height = 60;
+      //-->
+      </script>
+      <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+      </div>
+  </div>
+  <div class="clear"></div>
+  <!--/End Main Nav-->
+  
+  <!--Flags-->
+  <div id="separator" class="grid_12">
+    <!--/No Flag Content-->
+  </div>
+  <div class="clear"></div>
+  <!--/End Flags-->
+	
+	<!--/Categories-->
+   <div id="categories" class="grid_12">
+     <ul class="categories">
+       <li><a href="http://radar.whytheluckymobile.com/tagged/phone">PHONES</a></li>
+       <li><a href="http://radar.whytheluckymobile.com/tagged/tablet">TABLETS</a> </li>
+       <li><a href="http://radar.whytheluckymobile.com/tagged/android">ANDROID</a></li>
+       <li><a href="http://radar.whytheluckymobile.com/tagged/windows">WINDOWS</a></li>
+       <li><a href="http://radar.whytheluckymobile.com/tagged/symbian">SYMBIAN</a></li>
+     </ul>
+   </div>
+   <div class="clear"></div>
+   <!--/End Categories-->
+
+  <!--News Content-->
+	<div id="newscontent" class="grid_7">
+	  <div id="content_500">
+		{block:Posts}
+		<div class="post">
+		 	<a class="permalink" href="{Permalink}"><img src="/themes/4/link.gif" class="permalink" alt="Permalink"/></a>		
+	
+			{block:Text}
+			<div class="text">
+				{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+				{Body}	
+			</div>	
+			{/block:Text}
+	
+			{block:Link}
+			<div class="link">
+				 <div class="linka"><a href="{URL}" class="link" {Target}>{Name}</a></div>
+				 {block:Description}<div class="caption">{Description}</div>{/block:Description}	
+			</div>
+			{/block:Link}
+			
+			{block:Photo}
+			<div class="photo">
+				 <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+				 {block:Caption}
+								<div class="caption">{Caption}</div>
+				{/block:Caption}		
+			</div>
+			{/block:Photo}			
+			
+			{block:Quote}
+			  <div class="quote">
+			  	 &#34;{Quote}&#34;
+			  </div>
+			  {block:Source}<div class="source">&mdash; {Source}</div>{/block:Source}
+			{/block:Quote}	
+	
+			{block:Video}
+			<div class="video">
+				 {Video-500}
+				 {block:Caption}
+								<div class="caption">{Caption}</div>
+				{/block:Caption}		
+			</div>
+			{/block:Video}		
+			
+			{block:Audio}
+			<div class="audio">
+				 <div class="audiocont">
+				 	 {AudioPlayerGrey}
+				 </div>
+				 {block:Caption}
+								<div class="caption">{Caption}</div>
+				{/block:Caption}		
+			</div>
+			{/block:Audio}
+						
+			{block:Chat}
+			<div class="chat">
+				{block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+				<ul class="chat">
+					{block:Lines}
+						<li class="{Alt}">
+							{block:Label}<span class="label">{Label}</span>{/block:Label}
+							{Line}
+						</li>
+					{/block:Lines}
+				</ul>	
+			</div>	
+			{/block:Chat}	
+      <div class="cmt" style="font-size: 10px; text-align: right;"><a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comment</a></div>		
+		</div><!--/Posts-->
+		
+		{block:Permalink}
+    <div id="share">
+			 <span class="fb">
+			   <a name="fb_share" type="icon_link" share_url="{Permalink}" href="http://www.facebook.com/sharer.php">Share</a>
+			   <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+			 </span>
+			 <span class="tm">
+			   <script type="text/javascript">
+			   tweetmeme_url = "{Permalink}";
+			   tweetmeme_source = 'whythemobile';
+         tweetmeme_style = 'compact';
+         </script>
+         <script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+       </span>
+		</div>
+		<div class="date">				
+			Posted on <a href="{Permalink}" class="permalink">{DayOfMonth}{DayOfMonthSuffix} {ShortMonth} {ShortYear}</a>	
+		</div>	
+		{block:HasTags}<div class="tags">Tags: {block:Tags}<a href="{TagURL}" class="tag">{Tag}</a>{/block:Tags}</div>{/block:HasTags}
+    <div id="follower">
+		  <script type="text/javascript"><!--
+      google_ad_client = "pub-5908456869441900";
+      google_ad_slot = "2694445142";
+      google_ad_width = 468;
+      google_ad_height = 60;
+      //-->
+      </script>
+      <script type="text/javascript"
+      src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+		</div>
+    {/block:Permalink}
+		
+		{/block:Posts}
+
+    {block:PermalinkPage} 
+		<div id="comments-container">
+		  <script type="text/javascript">var disqus_url = "{Permalink}"; var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";</script>{block:Permalink}<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/mobiledeviceradar/embed.js"></script><noscript><a href="http://disqus.com/forums/mobiledeviceradar/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>{/block:Permalink}<script type="text/javascript">
+      //<![CDATA[
+      (function() {
+      	var links = document.getElementsByTagName('a');
+      	var query = '?';
+      	for(var i = 0; i < links.length; i++) {
+      	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+      		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+      	}
+      	}
+      	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/mobiledeviceradar/get_num_replies.js' + query + '"></' + 'script>');
+      })();
+      //]]>
+      </script>
+		</div>
+		{/block:PermalinkPage}
+		
+		{block:SearchPage}
+			<h2>Your search for <span class="query">{SearchQuery}</span> returned {SearchResultCount} result(s).</h2>
+		{/block:SearchPage}
+		
+	  </div><!--/End Content_500-->
+  </div>
+  <!--End News Content-->
+  
+  <!--Sidebar-->
+	<div id="sidebar" class="grid_5">
+	  <div id="intro">
+		  {Description}
+		</div>
+		<div id="feeds">
+		  <h4>SUBSCRIBE</h4>
+		  <img src="http://www.nexus-one.co.uk/images/twitter.png" width="32" height="32" alt="twitter icon">
+		  <span class="badge"><a href="http://twitter.com/whythemobile">Follow on Twitter</a></span>
+		  <img src="http://www.nexus-one.co.uk/images/rss.png" width="32" height="32" alt="rss icon">
+		  <span class="badge">
+		    <a href="http://feeds.feedburner.com/co/WhyTheLuckyMobile" title="Subscribe to our sitewide RSS feed" rel="alternate" type="application/rss+xml">All News</a>
+		    &nbsp;&nbsp;<a href="http://feeds.feedburner.com/MobileDeviceRadar" title="Subscribe to our Radar news feed" rel="alternate" type="application/rss+xml">Radar</a>
+      </span>
+		</div>
+		<div id="searchform">
+      <form action="http://www.whytheluckymobile.com/radarsearch.php" id="cse-search-box">
+        <div>
+          <input type="hidden" name="cx" value="partner-pub-5908456869441900:q2lwnl-v6b0" />
+          <input type="hidden" name="cof" value="FORID:10" />
+          <input type="hidden" name="ie" value="ISO-8859-1" />
+          <input type="text" name="q" size="31" />
+          <input type="submit" name="sa" value="Search" />
+        </div>
+      </form>
+      <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+		</div>
+		
+		<div id="sidebartxt">
+      <script type="text/javascript"><!--
+      google_ad_client = "pub-5908456869441900";
+      google_ad_slot = "1390418371";
+      google_ad_width = 336;
+      google_ad_height = 280;
+      //-->
+      </script>
+      <script type="text/javascript"
+      src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+      </script>
+    </div>
+		
+    <div id="recentcomments" class="dsq-widget"><h2 class="dsq-widget-title">Recent Comments</h2><script type="text/javascript" src="http://disqus.com/forums/mobiledeviceradar/recent_comments_widget.js?num_items=10&hide_avatars=0&avatar_size=32&excerpt_length=200"></script></div>
+	</div>
+	<div class="clear"></div>
+	<!--/End Sidebar-->
+	
+	
+	<div id="next">
+		{block:PreviousPage}
+			<a href="{PreviousPage}">Previous Page <big>-</big></a>
+		{/block:PreviousPage}
+
+		{block:NextPage}
+			<a href="{NextPage}"><big>+</big> Next Page</a>
+		{/block:NextPage}
+	</div>
+	
+	<div id="footer">
+	Browse The <a href="/archive">Archives</a> | Subscribe via <a href="http://feeds.feedburner.com/MobileDeviceRadar">RSS</a> | <a href="http://www.contactify.com/4045c" style="text-decoration:none;color:666;font-weight:normal">Contact</a>
+	</div>
+	<!--/Footer-->
+
+</div>
+<!--/#site/Container-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-304371-16");
+pageTracker._setDomainName(".whytheluckymobile.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
