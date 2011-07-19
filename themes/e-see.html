@@ -69,22 +69,25 @@ div#nav							{width:750px; margin:0 auto;}
 div#navmenu 					{}
 div#navmenu	ul					{margin:0px; padding: 0px;}
 div#navmenu	li 					{display:block; float: left; list-style: none; height:120px; line-height: 120px; width:85px; margin: 0 65px 0 0;}
-div#navmenu ul li a 			{display: block;float:left; vertical-align: top; text-decoration: none; color: transparent; font-size: 1em; text-align: center;}
-div#navmenu ul li a:hover  		{background: #fff url(http://www.e-see.com/_images/arrow5.png) center 0px no-repeat; color: black; cursor: pointer; text-align: center;}
-div#navmenu ul li a.active 		{background: #fff url(http://www.e-see.com/_images/arrow5.png) center 0px no-repeat;}
+div#navmenu ul li a 			{display: block;float:left; vertical-align: top; text-decoration: none; color: transparent; font-size: 1em; text-align: center; opacity: 0.6;}
 
 /* Navigation image hover
 --------------------------------*/
-a .nav_everything {background: url(http://www.e-see.com/_images/tumblr-everything.png); display:block; width:121px; height:110px;}
-a:hover .nav_everything {background: url(http://www.e-see.com/_images/tumblr-everything-over.png); display:block;  width:121px; height:110px;}
-a .nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands.png); display:block; width:121px; height:110px;}
-a:hover .nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands-over.png); display:block; width:121px; height:110px;}
-a .nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce.png); display:block; width:121px; height:110px;}
-a:hover .nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce-over.png); display:block; width:121px; height:110px;}
-a .nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm.png); display:block; width:121px; height:110px;}
-a:hover .nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm-over.png); display:block; width:121px; height:110px;}
-a .nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine.png); display:block; width:121px; height:110px;}
-a:hover .nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine-over.png); display:block; width:121px; height:110px;}
+div#navmenu ul li a.nav_everything {background: url(http://www.e-see.com/_images/tumblr-everything.png); display:block; width:121px; height:110px;}
+div#navmenu ul li a.nav_everything:hover {/*background: url(http://www.e-see.com/_images/tumblr-everything-over.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_everything.active {/*background: url(http://www.e-see.com/_images/tumblr-everything-over.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_talkbrands {background: url(http://www.e-see.com/_images/tumblr-talkbrands.png); display:block; width:121px; height:110px;}
+div#navmenu ul li a.nav_talkbrands:hover {/*background: url(http://www.e-see.com/_images/tumblr-talkbrands.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_talkbrands.active {/*background: url(http://www.e-see.com/_images/tumblr-talkbrands.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_logosauce {background: url(http://www.e-see.com/_images/tumblr-logosauce.png); display:block; width:121px; height:110px;}
+div#navmenu ul li a.nav_logosauce:hover  {/*background: url(http://www.e-see.com/_images/tumblr-logosauce.png);*/opacity: 1;}
+div#navmenu ul li a.nav_logosauce.active {/*background: url(http://www.e-see.com/_images/tumblr-logosauce.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_brandfm {background: url(http://www.e-see.com/_images/tumblr-brandfm.png); display:block; width:121px; height:110px;}
+div#navmenu ul li a.nav_brandfm:hover {/*background: url(http://www.e-see.com/_images/tumblr-brandfm.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_brandfm.active  {/*background: url(http://www.e-see.com/_images/tumblr-brandfm.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_mailmachine {background: url(http://www.e-see.com/_images/tumblr-mailmachine.png); display:block; width:121px; height:110px;}
+div#navmenu ul li a.nav_mailmachine:hover {/*background: url(http://www.e-see.com/_images/tumblr-mailmachine.png);*/ opacity: 1;}
+div#navmenu ul li a.nav_mailmachine.active {/*background: url(http://www.e-see.com/_images/tumblr-mailmachine.png);*/ opacity: 1;}
 
 /* Content
 --------------------------------*/
@@ -240,11 +243,11 @@ div#search                          {bottom: 50px;}
     <div id="nav">
       <div id="navmenu">
         <ul>
-        	<li><a href="http://e-see.tumblr.com/"><div class="nav_everything" title="All Posts"></div></a></li>
-        	<li><a href="http://e-see.tumblr.com/tagged/TalkBrands"><div class="nav_talkbrands" title="Posts about brands, branding and design tagged TalkBrands"></div></a></li>
-        	<li><a href="http://e-see.tumblr.com/tagged/Logosauce"><div class="nav_logosauce" title="Posts about Logosauce"></div></a></li>
-        	<li><a href="http://e-see.tumblr.com/tagged/BrandFM"><div class="nav_brandfm" title="Posts about BrandFM"></div></a></li>
-        	<li><a href="http://e-see.tumblr.com/tagged/MailMachine"><div class="nav_mailmachine" title="Posts about MailMachine"></div></a></li>
+        	<li><a href="http://e-see.tumblr.com/" class="nav_everything" title="All Posts"></a></li>
+        	<li><a href="http://e-see.tumblr.com/tagged/TalkBrands" class="nav_talkbrands" title="Posts about brands, branding and design tagged TalkBrands"></a></li>
+        	<li><a href="http://e-see.tumblr.com/tagged/Logosauce" class="nav_logosauce" title="Posts about Logosauce"></a></li>
+        	<li><a href="http://e-see.tumblr.com/tagged/BrandFM" class="nav_brandfm" title="Posts about BrandFM"></a></li>
+        	<li><a href="http://e-see.tumblr.com/tagged/MailMachine" class="nav_mailmachine" title="Posts about MailMachine"></a></li>
         </ul>
       </div>
     </div>
@@ -287,16 +290,17 @@ div#search                          {bottom: 50px;}
 		    </div>
 		    {/block:TagPage}
 		    
-		    <!-- Begin All Posts -->
+		<!-- Begin All Posts -->
         {block:Posts}
         <div class="post">
+        
           {block:NewDayDate}
           <div class="date">
             <span class="month">{ShortMonth}</span>
             <span class="day">{DayOfMonth}</span>
           </div>
           {/block:NewDayDate}
-          
+         
           <!-- Text Posts -->
           {block:Text} 
           <div class="regular">
@@ -305,6 +309,7 @@ div#search                          {bottom: 50px;}
           </div>
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+          </div>
           {/block:Text}
           
           <!-- Quote Posts -->
@@ -315,6 +320,7 @@ div#search                          {bottom: 50px;}
           </div>
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+          </div>
           {/block:Quote}
           
           <!-- Link Posts -->
@@ -327,6 +333,7 @@ div#search                          {bottom: 50px;}
           </div>
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+          </div>
           {/block:Link}
           
           <!-- Chat Posts -->
@@ -343,6 +350,7 @@ div#search                          {bottom: 50px;}
           </div>
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+          </div>
           {/block:Chat}
         
           <!-- Photo Posts -->
@@ -353,7 +361,9 @@ div#search                          {bottom: 50px;}
           </div>
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+          </div>
           {/block:Photo}
+          
           
           <!-- Video Posts -->
           {block:Video}
@@ -363,8 +373,9 @@ div#search                          {bottom: 50px;}
           </div>
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+          </div>
           {/block:Video}
-          
+			          
           <!-- Audio Posts -->
           {block:Audio}
           <div class="audio">
@@ -373,16 +384,17 @@ div#search                          {bottom: 50px;}
           </div>
           <div class="post-footer">
             {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+          </div>
           {/block:Audio}
   
           {block:Permalink}
-            <div id="disqus_thread"></div>
-              {block:IfDisqusShortname}
-                <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
-                <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
-              {/block:IfDisqusShortname}
+            <div id="disqus_thread">
+              	{block:IfDisqusShortname}
+                	<script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+                	<noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
+              	{/block:IfDisqusShortname}
+            	<a href="{Permalink}" class="permalink">{lang:Permalink} &#8734;</a>
             </div>
-            <a href="{Permalink}" class="permalink">{lang:Permalink} &#8734;</a>
           {/block:Permalink}
           
           <!-- Show Tags for each Post -->
