@@ -388,13 +388,7 @@ div#search                          {bottom: 50px;}
           {/block:Audio}
   
           {block:Permalink}
-            <div id="disqus_thread">
-              	{block:IfDisqusShortname}
-                	<script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
-                	<noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
-              	{/block:IfDisqusShortname}
-            	<a href="{Permalink}" class="permalink">{lang:Permalink} &#8734;</a>
-            </div>
+            <a href="{Permalink}" class="permalink">{lang:Permalink} &#8734;</a>
           {/block:Permalink}
           
           <!-- Show Tags for each Post -->
@@ -421,23 +415,6 @@ div#search                          {bottom: 50px;}
 <div id="pagebottom">
 </div>
 </div><!-- end div#wrapper-->
-
-{block:IfDisqusShortname}
-<script type="text/javascript">
-//<![CDATA[
-(function() {
-    var links = document.getElementsByTagName('a');
-    var query = '?';
-    for(var i = 0; i < links.length; i++) {
-    if(links[i].href.indexOf('#disqus_thread') >= 0) {
-        query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-    }
-    }
-    document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
-})();
-//]]>
-</script>
-{/block:IfDisqusShortname}
 
 <div id="footer">
     <div id="sitemap" class="encapsulate">
