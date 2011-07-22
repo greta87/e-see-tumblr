@@ -79,7 +79,7 @@ div#header.MailMachine #logo	{display:block; background: url(http://e-see.com/bl
 --------------------------------*/
 
 
-div#nav							{width:750px; margin:0 auto;}
+div#nav							{width:750px; margin:40px auto 0 auto;}
 div#navmenu 					{}
 div#navmenu	ul					{margin:0px; padding: 0px;}
 div#navmenu	li 					{display:block; float: left; list-style: none; height:120px; line-height: 120px; width:85px; margin: 0 65px 0 0;}
@@ -114,7 +114,8 @@ div#navmenu.MailMachine ul li a.nav_mailmachine {opacity: 1;}
 --------------------------------*/
 
 div#content						{width:650px; margin:0 auto;}
-
+div.share						{display:block; padding:5px;}
+div.share a						{display:block; float:left; margin-right: 10px;}
 
 /* Footer
 --------------------------------*/
@@ -152,7 +153,7 @@ p.small							{font-size: 0.8em;}
 div#search						{display:block; width: 250px; height:50px; margin: 20px auto;}
 div#search label				{text-transform: uppercase; color: #999; font-size: 13px;}
 div#search input				{color: #999; font-size: 13px; border: 1px solid #999; height:2em; width: 200px; padding: 3px;}
-div#socialbuttons				{float: right; margin-right:20px;}
+div#socialbuttons				{}
 
 div#searchresultcount			{padding: 20px 0;}
 
@@ -272,7 +273,7 @@ div#searchresultcount			{padding: 20px 0;}
   
   <div id="wrapper">
   
-  	<div id="search">
+  	<div id="search" style="display:none">
       <form action="/search" method="get">
         <input type="text" name="q" value="{SearchQuery}" placeholder="Search everything..."/>
         <!--<input type="GO" value="{lang:Search}"/>-->
@@ -336,7 +337,7 @@ div#searchresultcount			{padding: 20px 0;}
             {Body}
           </div>
           <div class="post-footer">
-            {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}
+            {block:Date}<span class="when">{lang:Posted at FormattedTime}</span>{/block:Date}<br />
           </div>
           {/block:Text}
           
@@ -427,6 +428,7 @@ div#searchresultcount			{padding: 20px 0;}
           {/block:HasTags}
           
         </div><!-- end div.post -->
+        
         {/block:Posts}
         
         {block:Pagination}
@@ -436,7 +438,7 @@ div#searchresultcount			{padding: 20px 0;}
             {block:PreviousPage}<a href="{PreviousPage}" id="next">{lang:Newer posts} &#8594;</a>{/block:PreviousPage}
           </div>
         {/block:Pagination}
-
+		
    </div> <!-- end div#posts -->
   </div><!-- end div#content -->
 </div><!-- end div#page -->
@@ -459,5 +461,6 @@ div#searchresultcount			{padding: 20px 0;}
     <p><strong>Tel: +64 9 631 5130<br />
     Or 0800 300 373</strong> (NZ only)</p>
 </div>
+<script type="text/javascript" src="http://platform.tumblr.com/v1/share.js"></script>
 </body>
 </html>
